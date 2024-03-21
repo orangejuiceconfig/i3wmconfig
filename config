@@ -38,7 +38,7 @@ bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewi
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 #GAPS
-gaps inner 2px
+gaps inner 0px
 #smart_gaps true
 
 #Title Bar
@@ -70,6 +70,8 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty -o font.size=8
+
+bindsym $mod+Shift+s exec ./C++/shortcut/Refrence-Card
 
 
 # kill focused window
@@ -133,8 +135,8 @@ bindsym $mod+space focus mode_toggle
 # focus the child container
 ################
 
-
-bindsym $mod+b exec google-chrome-stable
+#
+bindsym $mod+b exec firefox
 bindsym $mod+a exec pcmanfm
 bindsym $mod+e exec emacsclient -nc
 bindsym $mod+m exec spotify
@@ -216,4 +218,4 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "resize
